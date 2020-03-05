@@ -44,8 +44,8 @@ bash make.sh help
 
 Make a request on any route. The request will be stored by combination of method http and route.
 
-Method: POST
-URL: /api/fake
+Method: POST <br/>
+URL: /api/fake <br/>
 Request Body:
 ```
 {

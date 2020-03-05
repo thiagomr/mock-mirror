@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mock:
+    container_name: mock-api
+    build: .
+    ports:
+    - "8000:8000"
+    restart: on-failure
+    depends_on:
+      - mongo
+  mongo:
+    container_name: mock-mongo
+    image: mongo
+    ports:
+    - "27017:27017"
